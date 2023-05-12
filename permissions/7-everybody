@@ -1,3 +1,2 @@
 #!/bin/bash
-ichmod 555 hello
-
+chmod 555 hello
