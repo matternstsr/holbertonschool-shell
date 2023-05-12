@@ -1,0 +1,2 @@
+#!/bin/bash
+chmod ugo+x +x $(ls -p | grep /)
