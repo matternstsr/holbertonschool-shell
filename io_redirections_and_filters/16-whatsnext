@@ -1,2 +1,2 @@
 #!/bin/bash
-egrep -c 'root' /etc/passwd | tail -1
+egrep -c 'root' /etc/passwd | tail -3
