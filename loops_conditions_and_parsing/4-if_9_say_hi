@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#If 9, say Hi!
+doituntilitchanges=1
+while [ $doituntilitchanges -ne 11 ]
+do
+        if [ $doituntilitchanges -eq 9 ]; then
+                echo "hi"
+        else
+                echo "Best School"
+        fi
+    ((doituntilitchanges++))
+done
+
