@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #until loop
-count=1
-until [ $count -le 10 ]
+doituntil=1
+until [ $doituntil -gt 10 ]
 do
-    echo "Holberton School"
-    ((count++))
+    echo "Best School"
+    ((doituntil++))
 done
