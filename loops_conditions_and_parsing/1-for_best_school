@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+STOPITIN10=10
+for _ in $(seq 1 $STOPITIN10)
+	do echo "Best School"
+	done
