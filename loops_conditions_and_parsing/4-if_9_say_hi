@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #If 9, say Hi!
 doittilitchanges=1
-while [ $doittilitchanges -ne 11 ]
+while [ $doittilitchanges -ne 12 ]
 do
-        if [ $doittilitchanges -eq 9 ]; then
-                echo "hi"
+        if [ $doittilitchanges -eq 10 ]; then
+                echo "Hi"
 
         else
                 echo "Best School"
