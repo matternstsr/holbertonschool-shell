@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#While loop
+STOPITIN10=10
+while seq 1 $STOPITIN10; do echo "Best School"; done
