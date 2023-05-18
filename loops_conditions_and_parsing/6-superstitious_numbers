@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#If Superstitious_numbers
+doittilitchanges=1
+while [ $doittilitchanges -ne 21 ]
+do
+        if [ $doittilitchanges -eq 4 ]; then
+        	echo $doittilitchanges 
+		echo "bad luck from China"
+		
+	elif	[ $doittilitchanges -eq 9 ]; then
+		echo $doittilitchanges
+		echo "bad luck from Japan"	
+
+	elif    [ $doittilitchanges -eq 17 ]; then
+                echo $doittilitchanges
+                echo "bad luck from italy"
+
+	else
+	        echo $doittilitchanges
+	fi
+    ((doittilitchanges++))
+done
