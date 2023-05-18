@@ -4,5 +4,5 @@ doittoit=1
 while [ $doittoit -le 10 ]
 do
     echo "Best School"
-    ((count++))
+    ((doittoit++))
 done
