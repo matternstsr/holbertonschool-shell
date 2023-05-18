@@ -3,8 +3,9 @@
 doittilitchanges=1
 while [ $doittilitchanges -ne 11 ]
 do
-        if [ $doittilitchanges -eq 10 ]; then
+        if [ $doittilitchanges -eq 9 ]; then
                 echo "hi"
+
         else
                 echo "Best School"
         fi
