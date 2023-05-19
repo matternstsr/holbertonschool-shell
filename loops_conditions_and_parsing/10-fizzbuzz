@@ -16,5 +16,5 @@ do
     else
 	echo $fizzbuzz
     fi
-    ((fizbuzz++))
+    ((fizzbuzz++))
 done
