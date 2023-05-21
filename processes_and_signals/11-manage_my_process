@@ -20,7 +20,9 @@ elif [ "$1" == "stop" ]
 #               rm /var/run/my_process.pid
 #               echo "manage_my_process stopped"
 
-		[ -e "$FILE" ] && sudo pkill -p "(cat $FILE)" && rm "$FILE" 
+		[ -e "$FILE" ] && sudo pkill -p "$FILE" && sudo rm "$FILE" 
+
+		echo "manage_my_process stpped"
 
 elif [ "$1" == "restart" ]
 	then
@@ -28,7 +30,7 @@ elif [ "$1" == "restart" ]
 #    		rm /var/run/my_process.pid
 #    		echo "manage_my_process stopped"
 
-                [ -e "$FILE" ] && sudo pkill -p "(cat $FILE)" && rm "$FILE"
+                [ -e "$FILE" ] && sudo pkill -p "$FILE" && sudo rm "$FILE"
 		Create
 		echo "manage_my_process restarted"
 		#$0 stop >& /dev/null
