@@ -6,7 +6,7 @@ FILE="/var/run/my_process.pid"
 create()
 {
     sudo touch $FILE
-    sudo bash -c "echo $$ > $FILE"
+    sudo bash -c "echo $! > $FILE"
 }
 
 if [ "$1" == "start" ]; then
