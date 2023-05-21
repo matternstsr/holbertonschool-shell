@@ -22,7 +22,7 @@ elif [ "$1" == "stop" ]
 
 		[ -e "$FILE" ] && sudo pkill -p "$FILE" && sudo rm "$FILE" 
 
-		echo "manage_my_process stpped"
+		echo "manage_my_process stopped"
 
 elif [ "$1" == "restart" ]
 	then
