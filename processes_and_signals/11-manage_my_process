@@ -22,7 +22,7 @@ elif [ "$1" == "stop" ]
 elif [ "$1" == "restart" ]
 	then
 		[ -e "/var/run/my_process.pid" ] && sudo pkill -f "./manage_my_process" && rm "/var/run/my_process.pid"
-	        create  ./manage_my_process &
+	#        create  ./manage_my_process &
 	#	$0 stop >& /dev/null
     	#	$0 start >& /dev/null
        		echo "manage_my_process restarted"		
