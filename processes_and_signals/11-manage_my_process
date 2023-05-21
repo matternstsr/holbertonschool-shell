@@ -16,15 +16,24 @@ if [ "$1" == "start" ]; then
 
 elif [ "$1" == "stop" ]
 	then
-		[ -e "/var/run/my_process.pid" ] && sudo pkill -f "./manage_my_process" && rm /var/run/my_process.pid
-		echo "manage_my_process stopped"
+#		kill "$(cat /var/run/my_process.pid)"
+#               rm /var/run/my_process.pid
+#               echo "manage_my_process stopped"
+
+		[ -e "$FILE" ] && sudo pkill -p "(cat $FILE)" && rm "$FILE" 
 
 elif [ "$1" == "restart" ]
 	then
-		[ -e "/var/run/my_process.pid" ] && sudo pkill -f "./manage_my_process" && rm /var/run/my_process.pid
+#		kill "$(cat /var/run/my_process.pid)"
+#    		rm /var/run/my_process.pid
+#    		echo "manage_my_process stopped"
+
+                [ -e "$FILE" ] && sudo pkill -p "(cat $FILE)" && rm "$FILE"
+		Create
+		echo "manage_my_process restarted"
 		#$0 stop >& /dev/null
     		#$0 start >& /dev/null
-       		echo "manage_my_process restarted"		
+       				
 else
 	echo "Usage: manage_my_process {start|stop|restart}"
 fi
